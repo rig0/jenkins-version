@@ -37,7 +37,7 @@ A Jenkins shared library for automated semantic versioning in CI/CD pipelines. T
    - **Default version**: `main` (or your preferred branch)
    - **Retrieval method**: Modern SCM
    - **Source Code Management**: Git
-   - **Project Repository**: URL to this repository
+   - **Project Repository**: https://github.com/rig0/jenkins-version
 4. Optionally check **Load implicitly** to make it available to all pipelines
 
 ### Method 2: Direct Repository Reference
