@@ -48,7 +48,7 @@ In your Jenkinsfile:
 library identifier: 'jenkins-version@main',
         retriever: modernSCM([
           $class: 'GitSCMSource',
-          remote: 'https://github.com/yourusername/jenkins-version'
+          remote: 'https://github.com/rig0/jenkins-version'
         ])
 ```
 
