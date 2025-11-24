@@ -423,6 +423,7 @@ def commitAndPush(commitMessage, filesToAdd = 'VERSION') {
     passwordVariable: 'GIT_PASS'
   )]) {
     def authUrl = buildAuthUrl(repoUrl, GIT_USER, GIT_PASS)
+    def files = filesToAdd instanceof List ? filesToAdd.join(' ') : filesToAdd
 
     sh """#!/bin/bash
 set -euo pipefail
@@ -432,7 +433,7 @@ git config user.name "${botName}"
 git config user.email "${botEmail}"
 
 # Stage and commit
-git add ${filesToAdd}
+git add ${files}
 if git diff --staged --quiet; then
   echo "⚠️  No changes to commit"
 else
