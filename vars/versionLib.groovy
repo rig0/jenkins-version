@@ -402,7 +402,7 @@ def buildAuthUrl(baseUrl, username, password) {
  * @example
  * versionLib.commitAndPush('Update version and changelog', 'VERSION CHANGELOG.md')
  */
-def commitAndPush(String commitMessage, String filesToAdd = 'VERSION') {
+def commitAndPush(commitMessage, filesToAdd = 'VERSION') {
   def repoUrl = getConfig('repoUrl')
   def defaultBranch = getConfig('defaultBranch', 'main')
   def botName = getConfig('botName', 'jenkins-bot')
@@ -548,7 +548,7 @@ git remote set-url origin "${repoUrl}"
  * def commitHash = versionLib.getCommitHash()
  * def shortHash = versionLib.getCommitHash(true)
  */
-def getCommitHash(Boolean short = false) {
+def getCommitHash(short = false) {
   def format = short ? '%h' : '%H'
   return sh(
     script: "git log -1 --pretty=format:'${format}'",
