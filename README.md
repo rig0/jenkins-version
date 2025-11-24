@@ -365,12 +365,12 @@ if (!versionLib.validateVersionFile()) {
 
 ---
 
-#### `getCommitHash(short = false)`
+#### `getCommitHash(abbreviated = false)`
 
 Get current Git commit hash.
 
 **Parameters:**
-- `short` (Boolean, optional): If true, return short hash (7 chars), default: false
+- `abbreviated` (Boolean, optional): If true, return abbreviated hash (7 chars), default: false
 
 **Returns:** `String` - Git commit hash
 
@@ -1028,7 +1028,7 @@ versionLib.createAndPushTag(
 Build: #${env.BUILD_NUMBER}
 Date: ${new Date().format('yyyy-MM-dd HH:mm:ss')}
 Branch: ${env.BRANCH_NAME}
-Commit: ${versionLib.getCommitHash(true)}
+Commit: ${versionLib.getCommitHash(true)}  // abbreviated hash
 """
 )
 ```

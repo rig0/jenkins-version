@@ -541,15 +541,15 @@ git remote set-url origin "${repoUrl}"
 /**
  * Get current Git commit hash
  *
- * @param short If true, return short hash (7 chars), otherwise full hash
+ * @param abbreviated If true, return short hash (7 chars), otherwise full hash
  * @return Git commit hash
  *
  * @example
  * def commitHash = versionLib.getCommitHash()
  * def shortHash = versionLib.getCommitHash(true)
  */
-def getCommitHash(short = false) {
-  def format = short ? '%h' : '%H'
+def getCommitHash(abbreviated = false) {
+  def format = abbreviated ? '%h' : '%H'
   return sh(
     script: "git log -1 --pretty=format:'${format}'",
     returnStdout: true
