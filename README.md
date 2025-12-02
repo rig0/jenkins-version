@@ -1,6 +1,20 @@
+<div align="center">
+
 # Jenkins Version Management Library
 
-A Jenkins shared library for automated semantic versioning in CI/CD pipelines. This library provides intelligent version bumping based on commit messages, bot loop prevention, and comprehensive Git operations for version management workflows.
+![CI/CD](https://img.shields.io/badge/CI%2FCD-239120?logo=gitlab&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white)
+![Groovy](https://img.shields.io/badge/Groovy-5a92a7?logo=apachegroovy&logoColor=white)
+
+![Release](https://img.shields.io/github/v/release/rig0/jenkins-pushover?labelColor=222&color=80ff63)
+![Stability](https://img.shields.io/badge/stability-stable-80ff63?labelColor=222)
+![Maintained](https://img.shields.io/badge/maintained-yes-80ff63?labelColor=222)
+![GitHub last commit](https://img.shields.io/github/last-commit/rig0/jenkins-pushover?labelColor=222&color=80ff63)
+
+
+**A Jenkins shared library for automated semantic versioning in CI/CD pipelines. This library provides intelligent version bumping based on commit messages, bot loop prevention, and comprehensive Git operations for version management workflows.**
+
+</div>
 
 ## Features
 
@@ -23,8 +37,6 @@ A Jenkins shared library for automated semantic versioning in CI/CD pipelines. T
 - [API Reference](#api-reference)
 - [Complete Examples](#complete-examples)
 - [Best Practices](#best-practices)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
 
 ## Installation
 
