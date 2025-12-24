@@ -106,6 +106,7 @@ private String getConfig(String key, String defaultValue = null) {
     }
   } catch (Exception e) {
     // params may not be available in all contexts
+    echo "No params detected. Ignoring..."
   }
 
   // Try env next
@@ -115,6 +116,7 @@ private String getConfig(String key, String defaultValue = null) {
     }
   } catch (Exception e) {
     // env may not be available in all contexts
+    echo "No env detected. Ignoring..."
   }
 
   // Return default
